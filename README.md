@@ -16,8 +16,10 @@ ablation results are single-seed findings; seed 123 was not run.
 The tracked `artifacts/` directory contains metrics, split indices, model
 summaries, checks, diagrams, and plots. Model weight files and the full ZIP are
 kept locally and excluded from Git because of their size. Recreate weights by
-running the notebook in Colab. The 6–9-page `report.pdf` and an executed copy
-of the notebook still need to be added before final submission.
+running the notebook in Colab. The nine-page `report.pdf` is included and can
+be rebuilt from the recorded artifacts with `build_report.py` (requires
+ReportLab and Pillow). An executed copy of the Colab notebook still needs to
+be added before final submission.
 
 ## Fast local first step
 
@@ -146,9 +148,10 @@ protocol for the reported benchmark, so the notebook defaults to that platform.
 - `artifacts/selected_winner.json` and `final_test_result.json`: final choice
   recorded before the one permitted test evaluation.
 
-## Report still to prepare
+## Report
 
-The report should contain Part I calculations, fidelity/deviation table, data
-protocol, architecture and ablation comparisons, error analysis, compute budget,
-limitations, conclusions, and citations to the architecture papers and lectures.
-Do not fill the results table until training has produced measured results.
+`report.pdf` contains Part I calculations, the fidelity/deviation table,
+data protocol, all 11 measured runs, architecture and ablation comparisons,
+error analysis, compute budget, limitations, conclusions, and citations to the
+original architecture papers and course lectures. It uses the recorded CSV and
+JSON evidence; no results were invented or copied from historical benchmarks.
