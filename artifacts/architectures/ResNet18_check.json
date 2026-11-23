@@ -1,0 +1,12 @@
+{
+  "forward_shape": [
+    2,
+    10
+  ],
+  "parameter_check": {
+    "layer": "stem_conv",
+    "formula": "7*7*3*64",
+    "manual": 9408,
+    "keras": 9408
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "forward_shape": [
+    2,
+    10
+  ],
+  "parameter_check": {
+    "layer": "block1_conv1",
+    "formula": "3*3*3*64+64",
+    "manual": 1792,
+    "keras": 1792
+  }
+}

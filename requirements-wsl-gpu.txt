@@ -1,0 +1,6 @@
+tensorflow[and-cuda]>=2.16,<2.22
+numpy
+pandas
+scikit-learn
+matplotlib
+pydot

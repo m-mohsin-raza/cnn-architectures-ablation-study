@@ -1,0 +1,8 @@
+{
+  "convolutional_base_params": 14714688,
+  "canonical_classifier_params": 35700746,
+  "gap_classifier_params": 5130,
+  "canonical_total_params": 50415434,
+  "gap_total_params": 14719818,
+  "saved_parameters": 35695616
+}

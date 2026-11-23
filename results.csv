@@ -1,0 +1,12 @@
+run_id,architecture_variant,input_size,seed,trainable_params,total_params,epochs,best_val_accuracy,macro_f1,final_train_accuracy,generalization_gap,training_minutes,peak_gpu_memory_mb,key_change_caveat,checkpoint
+arch_AlexNet_s42,AlexNet,96x96,42,30010762,30010762,5,0.509,0.510136,0.514833,0.005833,1.437,1053.8,Scratch model; 96x96 upscaled CIFAR-10; one seed,artifacts/checkpoints/arch_AlexNet_s42.weights.h5
+arch_VGG16_s42,VGG16,96x96,42,50415434,50415434,5,0.1,0.018182,0.094083,-0.005917,5.336,2056.3,Scratch model; 96x96 upscaled CIFAR-10; one seed,artifacts/checkpoints/arch_VGG16_s42.weights.h5
+arch_GoogLeNet_s42,GoogLeNet,96x96,42,5983802,5983802,5,0.1,0.018182,0.096083,-0.003917,4.741,1585.3,Scratch model; 96x96 upscaled CIFAR-10; one seed,artifacts/checkpoints/arch_GoogLeNet_s42.weights.h5
+arch_ResNet18_s42,ResNet18,96x96,42,11181642,11191242,5,0.521,0.53616,0.771917,0.304917,2.189,3627.1,Scratch model; 96x96 upscaled CIFAR-10; one seed,artifacts/checkpoints/arch_ResNet18_s42.weights.h5
+A0_s42,A0,64x64,42,20042,20042,5,0.299,0.27728,0.272917,-0.026083,0.401,1474.2,Controlled 64x64 scratch ablation,artifacts/checkpoints/A0_s42.weights.h5
+A1_s42,A1,64x64,42,20138,20330,5,0.372,0.357546,0.421167,0.094833,0.456,1553.0,Controlled 64x64 scratch ablation,artifacts/checkpoints/A1_s42.weights.h5
+A2_s42,A2,64x64,42,20138,20330,5,0.376333,0.366868,0.410083,0.054083,0.552,1418.2,Controlled 64x64 scratch ablation,artifacts/checkpoints/A2_s42.weights.h5
+A3-P_s42,A3-P,64x64,42,66410,66794,5,0.494333,0.472409,0.514083,0.01975,0.735,1629.0,Controlled 64x64 scratch ablation,artifacts/checkpoints/A3-P_s42.weights.h5
+A3-R_s42,A3-R,64x64,42,68746,69322,5,0.476,0.46114,0.497667,0.021667,0.825,1547.3,Projection shortcuts add a small parameter difference,artifacts/checkpoints/A3-R_s42.weights.h5
+A4-F_s42,A4-F,96x96,42,20490,23608202,5,0.837,0.836677,0.9095,0.0725,2.717,1598.7,Separate ImageNet-pretrained transfer branch,artifacts/checkpoints/A4-F_s42.weights.h5
+A4-T_s42,A4-T,96x96,42,8939530,23608202,5,0.860333,0.86047,0.999917,0.139583,2.557,1763.0,Separate ImageNet-pretrained transfer branch,artifacts/checkpoints/A4-T_s42.weights.h5
